@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Medical Portal</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Digital Medical Portal <span class="accent">+</span></h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+
+                <li><a href="#pharmacy">Pharmacy</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="doctors">
+            <h2>Doctor's Dashboard</h2>
+            <form id="prescriptionForm">
+                <label for="doctorName">Doctor Name</label>
+                <input type="text" id="doctorName" required />
+
+                <label for="patientName">Patient Name</label>
+                <input type="text" id="patientName" required />
+
+                <label for="medicineName">Medicine Name</label>
+                <input type="text" id="medicineName" required />
+
+                <label for="dosage">Dosage</label>
+                <input type="text" id="dosage" required />
+
+                <button type="submit">Issue Prescription</button>
+            </form>
+            <ul id="prescriptionList"></ul>
+            <p id="issuedToken"></p>
+        </section>
+
+        <section id="pharmacy">
+            <h2>Pharmacy Dashboard</h2>
+            <label for="tokenInput">Enter Token to Collect Medication:</label>
+            <input type="text" id="tokenInput" />
+            <button id="collectButton">Collect Medication</button>
+            <p id="collectionMessage"></p>
+        </section>
+    </main>
+
+    <footer id="contact">
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
